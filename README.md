@@ -1,5 +1,6 @@
 # Web Log Project by Toast
 ### Roster: Justin Morrill, Rayat Roy, Tami Takada, Haotian Gan (PM)
+### Editors (CSS): Joshua Kloepfer, Qina Liu
 #### Description
 A blog site. Register and then log in to access the website. Once you log in, you will be redirected to the home page. 
 Your home page will have suggestions for other user blogs and a link to your own blog. 
