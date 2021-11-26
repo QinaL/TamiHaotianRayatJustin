@@ -8,8 +8,15 @@
       rel="stylesheet"
       href="{{ url_for('static',filename='styles.css') }}"
     />
+      <style>
+          body {
+              border: 10px groove #CBF3F0;  
+              
+          }
+      </style>
     <title>Document</title>
   </head>
+    
   <body>
     <div class="centerFillFlex">
       <h2>You are logged in. Welcome to the blog site!</h2>
@@ -19,7 +26,7 @@
       {% for user in random_users %}
       <div class="blueBox">
         <p>
-          <a href="/blog/{{user['user_id']}}" style="text-decoration: none;"
+          <a href="/blog/{{user['user_id']}}"
             >{{user['username'] + "'s Blog Page"}}</a
           >
         </p>

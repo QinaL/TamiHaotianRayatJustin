@@ -11,10 +11,9 @@
 
   <body>
     <div class="centerFillFlex">
-      <div style="display: flex; flex-direction: column; align-items: stretch">
         <h3>Enter your username and password below.</h3>
         {% if error %}
-        <p style="color: red">Your credentials did not match our records</p>
+        <p>Your credentials did not match our records</p>
         {% endif %}
         <form action="/login" method="post">
           <!-- Username field -->
@@ -23,7 +22,6 @@
             name="username"
             placeholder="Enter your username"
             class="textInput"
-            style="margin-top: 20px"
           />
           <!-- Password field -->
           <input
@@ -32,17 +30,15 @@
             placeholder="Enter your password"
             class="textInput"
           />
-          <div class="centerFlex" style="width: 100%">
+          <div class="centerFlex">
             <input
               type="submit"
               name="sub1"
               class="button"
-              style="margin-top: 20px"
             />
           </div>
         </form>
       </div>
       <p><a href="/register">New user?</a></p>
-    </div>
   </body>
 </html>

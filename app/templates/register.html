@@ -6,6 +6,11 @@
       rel="stylesheet"
       href="{{ url_for('static',filename='styles.css') }}"
     />
+    <style>
+        p {
+         color: #BD4C6C;   
+        }
+      </style>
     <title>Register</title>
   </head>
 
@@ -19,7 +24,6 @@
             name="username"
             placeholder="Enter your username"
             class="textInput"
-            style="margin-top: 20px"
           />
         <!-- Password field -->
         <input
@@ -35,21 +39,20 @@
           placeholder="Confirm your password"
           class="textInput"
         />
-        <div class="centerFlex" style="width: 100%">
+        <div class="centerFlex">
           <input
             type="submit"
             name="sub1"
             class="button"
-            style="margin-top: 20px"
           />
         </div>
       </form>
-      <br />
-      <a href="/"><p>Return to login page</p></a>
-      <br />
+      <br>
+      <a href="/">Return to login page</a>
+      <br><br>
 
       {% if error %}
-      <p style="color: red;">{{error_message}}</p>
+      <p>{{error_message}}</p>
       {% endif %}
     </div>
   </body>

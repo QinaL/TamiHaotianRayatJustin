@@ -1,0 +1,32 @@
+body {
+    background-color: #C6C2FF; 
+    margin: 15px;
+    border-width: thick;
+    border-style: double inset double outset;
+    border-color: #757BC8;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Didot, serif;
+}
+
+hr {
+    background-color: #69306D;   
+    width: 900px;
+    height: 1px;
+    border-color: #0E103D;
+}
+
+a:link {
+    color: #093A3E;
+}
+
+a:visited {
+    color: #00635D;
+}
+
+button {
+    background-color: #CAE3DD;
+    color: #2B4162;
+    border-radius: 8px;
+    border-color: #2B4162;
+}
